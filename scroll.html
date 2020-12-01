@@ -9,24 +9,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
         body{
-            height: 1000px;
+            height: 10000px;
             background: linear-gradient(150deg, black, rgb(155, 107, 152), gray);
         }
         h1{
             color:#fff;
 
         }
+        .progress{
+            position: fixed;
+            width: 4px;
+            height: 140px;
+            top:40%;
+            left:20px;
+            background-color:black;
+            z-index: 10;
+        }
+        .bar{
+            position: absolute;
+            width: 4px;
+            height: 40px;
+            top:0;
+            left:0;
+            background-color: yellow;
+            z-index: 11;
+        }
 
     </style>
     <script>
-        let scroll =0;
-        window.addEventListener("scroll",function(){
+        let scrollTop =0;
+        let bar;
+
+        window.onload =function(){
+            bar= document.getElementsByClassName("bar")[0];
+        }
+
+        window.addEventListener("scroll",function(e){
             scrollTop =document.documentElement.scrollTop;
-            console.log(scrollTop)
-        },false)
+            //console.log("스크롤값: " + scrollTop)
+            let per =Math.ceil(scrollTop / (document.body.scrollHeight - window.outerHeight)*100);
+            //console.log(per);
+            bar.style.height = per +"%";
+        }, false)
     </script>
     </head>
     <body>
         <h1>스크롤</h1>
+        <div class="progress">
+            <span class ="bar"> </span>
+        </div>
     </body>
     </html>
