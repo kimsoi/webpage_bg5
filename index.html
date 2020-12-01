@@ -81,10 +81,13 @@
             position: absolute;
             width: 500px;
             left:calc(50% - 150px) ; /*사진 가운데로*/ 
-            z-index: 100;  /* //사람 이미지 맨 앞으로 갖고오기 */
+            /* z-index: 100;  //사람 이미지 맨 앞으로 갖고오기 */
         }
         .bg{
             position: relative;
+        }
+        .imgWrap{
+            z-index: 1;
         }
       
 
@@ -146,8 +149,10 @@
             <a href="file:///C:/Users/%EA%B9%80%EC%86%8C2/Desktop/%EB%8D%B0%EC%9E%87%EA%B1%B8%EC%A6%88/%EB%8D%B0%EB%AA%A8%EB%8D%B0%EC%9D%B4/webpage_bg5/webpage_bg5/About5.html">team 5</a>
           </div>
 
-        <img src="lolo.png"  width ="100" height-= "100" class = "human" alt="배틀그라운드 로고"> 
-        <img src="obj.png" class = "bg" alt="사막배경">
+        <div class="imgWrap">
+            <img src="lolo.png"  width ="100" height-= "100" class = "human" alt="배틀그라운드 로고"> 
+            <img src="obj.png" class = "bg" alt="사막배경">
+        </div>
        
         
   </body>
