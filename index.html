@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <style>
-
         * {
             box-sizing: border-box;
             }
@@ -23,19 +22,27 @@
         .topnav {
                 overflow: hidden;
                 background-color: #333;
+                z-index: 100;
+                position: relative;
          }
          .topnav a {
+                
                 float: left;
                 display: block;
                 color: #f2f2f2;
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+                z-index: 100;
         }
         .topnav a:hover {
                 background-color: #ddd;
                 color: black;
+                z-index: 100;
         }
+        li {display: inline;}
+
+       
     
         
         body{ 
@@ -73,8 +80,7 @@
             left:calc(50% - 150px) ; /*사진 가운데로*/ 
             z-index: 100;  /*사람 이미지 맨 앞으로 갖고오기*/
         }
-        /* .bg{} */
-        li {display: inline;}
+      
 
     </style>
     
@@ -127,8 +133,8 @@
     <body>
         
           
-          <div class="topnav">
-            <a href="www.naver.com">Player</a>
+        <div class="topnav">
+            <a href="https://kimsoi.github.io/webpage_bg5/">Lab</a>
             <a href="#">Weapon</a>
             <a href="#">추천추천</a>
             <a href="file:///C:/Users/%EA%B9%80%EC%86%8C2/Desktop/%EB%8D%B0%EC%9E%87%EA%B1%B8%EC%A6%88/%EB%8D%B0%EB%AA%A8%EB%8D%B0%EC%9D%B4/webpage_bg5/webpage_bg5/About5.html">team 5</a>
