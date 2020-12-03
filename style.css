@@ -109,3 +109,8 @@ img {
 .strikethrough {
 	text-decoration: line-through;
 }
+.normal-content_global-width{
+	color : white;
+	text-align: center;
+
+}
