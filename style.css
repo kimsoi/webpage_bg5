@@ -89,6 +89,7 @@ img {
 	border-radius: 10px;
 	background: #CCEEFF;
 	box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+	text-align:center;
 }
 .bird {
 	position: absolute;
