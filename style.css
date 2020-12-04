@@ -86,9 +86,9 @@ img {
 .step {
 	margin-bottom: 60vh;
 	padding: 0.5rem 1rem;
-	border-radius: 10px;
-	background: #CCEEFF;
-	box-shadow: rgba(0, 0, 0, 0.3) 0 0 3px;
+	/* border-radius: 10px; */
+	background: rgba(204,204,204,.8);
+	box-shadow: rgba(0, 0, 0, 0.5) 0 0 3px;
 	text-align:center;
 }
 .bird {
